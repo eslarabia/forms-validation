@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="test_form_regular.css">
+    <title>Document</title>
+  </head>
+  <body oncontextmenu="return false;">
+    <h1>Forms Available 😒❤️</h1>
+    <div class="parent">
+      <form action="" method="get" class="register">
+        <div class="form DivUser">
+          <label for="user">User: </label>
+          <input type="text" id="user" name="user">
+          <div class="icons">
+            <ion-icon name="checkmark-circle-outline" class="open"></ion-icon>
+            <ion-icon name="close-circle-outline" class="close"></ion-icon>
+          </div>
+        </div>
+
+        <div class="form DivUser">
+          <label for="phone">Phone: </label>
+          <input type="text" id="phone" name="Phone" maxlength="15">
+          <div class="icons">
+            <ion-icon name="checkmark-circle-outline" class="open"></ion-icon>
+            <ion-icon name="close-circle-outline" class="close"></ion-icon>
+          </div>
+        </div>
+
+        <div class="form DivUser">
+          <label for="email">Email: </label>
+          <input type="text" id="email" name="email">
+          <div class="icons">
+            <ion-icon name="checkmark-circle-outline" class="open"></ion-icon>
+            <ion-icon name="close-circle-outline" class="close"></ion-icon>
+          </div>
+        </div>
+
+        <div class="form DivUser">
+          <label for="password">Password: </label>
+          <input type="password" id="password" name="password">
+          <div class="par">
+            <ion-icon name="eye-off-outline" class="hidden"></ion-icon>
+            <ion-icon name="eye-outline" class="show"></ion-icon>
+          </div>
+        </div>
+
+        <div class="form DivUser">
+          <label for="PasswordAgain">Password Again: </label>
+          <input type="Password" id="PasswordAgain" name="PasswordAgain">
+          <div class="par">
+            <ion-icon name="eye-off-outline" class="hidden"></ion-icon>
+            <ion-icon name="eye-outline" class="show"></ion-icon>
+          </div>
+        </div>
+        <input type="submit" value="Sign Up" class="submit btn">
+      </form>
+    </div>
+
+    <script>
+      document.onkeydown = function (e) {
+          if (event.keyCode == 1) {
+              return false;
+          }
+
+          if (e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0)) {
+              return false;
+          }
+      }
+    </script>
+    <script src="test_form_regular.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  </body>
+</html>

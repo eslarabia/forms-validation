@@ -1,0 +1,228 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url("pexels-vlad-alexandru-popa-1402787.jpg");
+  background-size: cover;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-inline: 20px;
+  flex-direction: column;
+  gap: 10px;
+}
+
+h1 {
+  color: white;
+  font-size: 22px;
+  font-family: fangsong;
+  font-weight: 100;
+  margin-bottom: 16px;
+}
+
+.parent {
+  width: 100%;
+  backdrop-filter: blur(2px);
+  border-radius: 10px;
+  padding: 15px;
+}
+
+.parent .register {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.register .DivUser {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  width: 100%;
+  position: relative;
+}
+
+.DivUser label {
+  color: white;
+  font-size: 13px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.DivUser input:focus {
+  outline: none;
+  background-color: #ffffff78;
+}
+
+.DivUser input {
+  padding-inline: 5px;
+  padding-block: 5px;
+  border-radius: 5px;
+  border: 1px solid transparent;
+  background-color: #e2e7ff70;
+  color: #ffffff;
+}
+
+.DivUser input::placeholder {
+  color: white;
+  font-size: 12px;
+}
+
+/* .icons {
+  position: absolute;
+  top: 50%;
+  right: 2px;
+  transform: translateY(-50%);
+  width: 18px;
+  height: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} */
+
+.btn {
+  border: hidden;
+  background-color: transparent;
+  background-color: #3f51b5c2;
+  color: white;
+  font-size: 13px;
+  padding-inline: 10px;
+  padding-block: 7px;
+  border-radius: 5px;
+  transition-duration: .4s;
+  width: 100%;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #3f51b5;
+}
+
+/* .from ion-icon {
+  position: absolute;
+  position: absolute;
+  right: 0;
+  top: 53px;
+  transform: translateY(-50px);
+} */
+
+/* .icons ion-icon:nth-child(1),
+.icons ion-icon:nth-child(2) {
+  display: none;
+} */
+
+/* .icons ion-icon:nth-child(1).true {
+  color: #09c372;
+} */
+
+
+/* .icons ion-icon:nth-child(2).active {
+  display: block;
+  color: red;
+}
+
+input.active {
+  border: 2px solid red;
+}
+
+.icons ion-icon:nth-child(1).true {
+  display: block;
+  color: #09c372;
+}
+
+input.true {
+  border: 2px solid #09c372;
+} */
+
+/* input.active {
+  border: 2px solid #09c372;
+} */
+
+
+
+input.active {
+  border: 2px solid red;
+}
+
+input.true {
+  border: 2px solid #09c372;
+}
+
+.par {
+  position: absolute;
+  top: 54%;
+  right: 4px;
+  color: white;
+}
+
+.par .show {
+  display: none;
+}
+
+.par .show.active {
+  display: block;
+}
+
+.par .hidden {
+  display: block;
+}
+
+.par .hidden.active {
+  display: none;
+}
+
+/* .DivUser .icons {
+  position: absolute;
+  top: 50%;
+  font-size: 20px;
+  right: 23px;
+} */
+
+.DivUser .icons ion-icon {
+  position: absolute;
+}
+
+.DivUser .close,
+.DivUser .open {
+  display: none;
+  visibility: hidden;
+  position: absolute;
+  top: 25px;
+  right: 5px;
+  font-size: 19px;
+}
+
+/* .icons .close,
+.icons .open {
+} */
+
+.icons .close.active {
+  display: block;
+  visibility: visible;
+  color: red;
+}
+
+.icons .open.core {
+  display: block;
+  visibility: visible;
+  color: #09c372;
+}
+
+@media (min-width: 375px) {
+  .parent {
+    width: 100%;
+    max-width: 363px;
+  }
+}
+
+@media (min-width: 640px) {
+  .parent {
+    width: 100%;
+    max-width: 395px;
+  }
+}
